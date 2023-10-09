@@ -1166,9 +1166,9 @@ static LIB_DEPS: [(&[u8], &str);3] = [
 
 #[cfg(target_os="macos")]
 static LIB_DEPS: [(&[u8], &str);2] = [
-    (include_bytes!("../dll/3.0.11/macos/libvlc.dylib"), "libvlc.dynlib"),
-    (include_bytes!("../dll/3.0.11/macos/libvlccore.dylib"), "libvlccore.dynlib"),
-    //(include_bytes!("../dll/3.0.11/macos/axvlc.dynlib"), "axvlc.dynlib"),
+    (include_bytes!("../dll/3.0.11/macos/libvlc.dylib"), "libvlc.dylib"),
+    (include_bytes!("../dll/3.0.11/macos/libvlccore.dylib"), "libvlccore.dylib"),
+    //(include_bytes!("../dll/3.0.11/macos/axvlc.dylib"), "axvlc.dylib"),
 ];
 
 fn load_library_inner() -> Result<VlcDll, &'static str> {
