@@ -1187,6 +1187,8 @@ fn load_library_inner() -> Result<VlcDll, &'static str> {
 
     library_path.push(LIB_DEPS[0].1);
 
+    println!("library_path: {:?}", library_path);
+
     initialize_library(&library_path).ok_or("could not initialize library")
 }
 
